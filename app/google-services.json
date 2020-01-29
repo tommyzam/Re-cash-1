@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "104131198937",
+    "firebase_url": "https://re-cash.firebaseio.com",
+    "project_id": "re-cash",
+    "storage_bucket": "re-cash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104131198937:android:7e083e222edf34ca01e3c8",
+        "android_client_info": {
+          "package_name": "com.example.re_cash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104131198937-ohp3t95bdtaofp853o9hcsldmfjs0eo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6RKsUeSi6KFWkbpEmG3M_fexkcDjECe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104131198937-ohp3t95bdtaofp853o9hcsldmfjs0eo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
