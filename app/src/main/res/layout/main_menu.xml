@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:maxWidth="60dp"
+            android:maxHeight="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="132dp"
+            android:layout_height="165dp"
+            app:srcCompat="@drawable/lastbin"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="143dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="85dp"
+            android:layout_height="19dp"
+            android:text="         CODE"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="208dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="134dp"
+            android:layout_height="165dp"
+            app:srcCompat="@drawable/lastbin"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="323dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="131dp"
+            android:layout_height="163dp"
+            app:srcCompat="@drawable/lastbin"
+            tools:layout_editor_absoluteX="242dp"
+            tools:layout_editor_absoluteY="328dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="146dp"
+            android:layout_height="186dp"
+            app:srcCompat="@drawable/lastbin"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="523dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="134dp"
+            android:layout_height="187dp"
+            app:srcCompat="@drawable/lastbin"
+            tools:layout_editor_absoluteX="242dp"
+            tools:layout_editor_absoluteY="528dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    VIEW \n REWARDS"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   VIEW \n HISTORY"
+            tools:layout_editor_absoluteX="277dp"
+            tools:layout_editor_absoluteY="382dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   VIEW \n PROFILE"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="593dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    SIGN \n    OUT"
+            tools:layout_editor_absoluteX="277dp"
+            tools:layout_editor_absoluteY="593dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="228dp"
+            android:layout_height="66dp"
+            android:text="   MAIN MENU"
+            android:textColor="#4CAF50"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select one of the following"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="82dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
