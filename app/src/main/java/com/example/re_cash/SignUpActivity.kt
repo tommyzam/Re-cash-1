@@ -18,6 +18,7 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sign_up)
         auth = FirebaseAuth.getInstance()
 
+
         btn_sign_up.setOnClickListener {
             signUpUser()
 
@@ -33,7 +34,7 @@ class SignUpActivity : AppCompatActivity() {
             return
             }
 
-            if(Patterns.EMAIL_ADDRESS.matcher(tv_username.text.toString()).matches()){
+            if(!Patterns.EMAIL_ADDRESS.matcher(tv_username.text.toString()).matches()){
                 tv_username.error = "Please enter valid email"
                 tv_username.requestFocus()
                 return
@@ -45,7 +46,7 @@ class SignUpActivity : AppCompatActivity() {
                 return
             }
 
-             auth.createUserWithEmailAndPassword(tv_username.text.toString(), tv_password.text.toString())
+            auth.createUserWithEmailAndPassword(tv_username.text.toString(), tv_password.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     startActivity(Intent(this,LoginActivity::class.java))

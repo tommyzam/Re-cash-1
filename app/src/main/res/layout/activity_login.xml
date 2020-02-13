@@ -24,13 +24,13 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:text="Login"
-        app:layout_constraintBottom_toTopOf="@+id/SignUp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sign_up_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/SignUp"
+        android:id="@+id/btn_sign_up_login"
         style="@style/FirebaseUI.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
