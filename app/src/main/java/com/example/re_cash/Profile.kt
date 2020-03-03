@@ -3,6 +3,7 @@ package com.example.re_cash
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.FirebaseAuth
@@ -10,13 +11,21 @@ import kotlinx.android.synthetic.main.activity_profile.*
 
 class Profile : AppCompatActivity() {
 
+
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+
         auth = FirebaseAuth.getInstance()
+
+        back_btn.setOnClickListener {
+            val intent = Intent(baseContext, HomeActivity::class.java);
+            startActivity(intent);
+        }
+
 
         btn_change_password.setOnClickListener {
             changePassword()
