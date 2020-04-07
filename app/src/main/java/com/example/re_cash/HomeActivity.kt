@@ -23,38 +23,37 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        //       var btnLogOut = findViewById<Button>(R.id.btn_signout)
+      //  var btnLogOut = findViewById<Button>(R.id.btn_signout)
 
-        //           btnLogOut.setOnClickListener {
-        //             showmessage(view, "Logging Out...")
-        //           signOut()
-        // }
+      //  btnLogOut.setOnClickListener {
+           // showmessage(view, "Logging Out...")
+            //signOut()
+      //  }
 
-        //     fbAuth.addAuthStateListener {
-        //       if (fbAuth.currentUser == null){
-        //         this.finish()
-        //       }
-        // }
-        // }
-        //fun signOut() {
-        //  fbAuth.signOut()
+        //fbAuth.addAuthStateListener {
+          //  if (fbAuth.currentUser == null) {
+              //  this.finish()
+            //}
+            // }
+            // }
+            //fun signOut() {
+              //  fbAuth.signOut()
 
-        //}
+                //}
 
-        //fun showmessage(view: View, message: String){
+                //fun showmessage(view: View, message: String){
 
-        // }
+                // }
 
 
-        imageButton6.setOnClickListener() {
-            startActivity(Intent(this, Profile::class.java))
-            finish()
-        }
-
+                imageButton6.setOnClickListener() {
+                   startActivity(Intent(this, Profile::class.java))
+                    finish()
+                }
+            }
 
     }
 
-}
 
 
 
