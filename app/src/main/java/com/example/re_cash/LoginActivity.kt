@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         auth = FirebaseAuth.getInstance()
 
-        btn_sign_up_login.setOnClickListener() {
+        btn_sign_up_login.setOnClickListener {
             startActivity(Intent(this, SignUpActivity::class.java))
             finish()
         }

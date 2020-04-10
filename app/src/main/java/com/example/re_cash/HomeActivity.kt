@@ -46,13 +46,21 @@ class HomeActivity : AppCompatActivity() {
                 // }
 
 
-                imageButton6.setOnClickListener() {
+            imageButton6.setOnClickListener {
                    startActivity(Intent(this, Profile::class.java))
                     finish()
-                }
+            }
+            imageButton4.setOnClickListener {
+                   startActivity(Intent(this, Codereader::class.java))
+                finish()
+            }
+             imageButton5.setOnClickListener {
+            startActivity(Intent(this, History::class.java))
+            finish()
             }
 
     }
+}
 
 
 

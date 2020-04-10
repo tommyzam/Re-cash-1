@@ -16,7 +16,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_arrow_left"
-        android:contentDescription="TODO" />
+        android:contentDescription="TODO"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/textView"

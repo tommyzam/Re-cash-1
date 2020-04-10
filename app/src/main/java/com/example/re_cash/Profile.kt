@@ -22,8 +22,8 @@ class Profile : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         back_btn.setOnClickListener {
-            val intent = Intent(baseContext, HomeActivity::class.java);
-            startActivity(intent);
+            val intent = Intent(baseContext, HomeActivity::class.java)
+            startActivity(intent)
         }
 
 
@@ -47,14 +47,14 @@ class Profile : AppCompatActivity() {
                         .getCredential(user.email!!, et_current_password.text.toString())
 
 // Prompt the user to re-provide their sign-in credentials
-                    user?.reauthenticate(credential)
-                        ?.addOnCompleteListener {
+                    user.reauthenticate(credential)
+                        .addOnCompleteListener {
                             if (it.isSuccessful) {
                                 Toast.makeText(this, "Re-Authintication success", Toast.LENGTH_SHORT)
                                     .show()
 
-                                user?.updatePassword(et_new_password.text.toString())
-                                    ?.addOnCompleteListener { task ->
+                                user.updatePassword(et_new_password.text.toString())
+                                    .addOnCompleteListener { task ->
                                         if (task.isSuccessful) {
                                             Toast.makeText(this, "Passowrd Changed Successfully", Toast.LENGTH_SHORT)
                                                 .show()
