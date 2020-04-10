@@ -12,16 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".History" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="barcode" />
 
 
 
         <activity
-            android:name=".Codereader"
-            android:screenOrientation="unspecified">
-             <meta-data
-            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
-            android:value="barcode" />
-        </activity>
+            android:name=".Codereader"/>
 
         <activity android:name=".Profile" />
         <activity android:name=".SignUpActivity" />
